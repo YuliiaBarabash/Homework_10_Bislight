@@ -26,7 +26,7 @@ a {
 }
 
 .banner-container {
-  height: 550px;
+  min-height: 500px;
   padding-top: 30px;
   background-color: #81e4ed;
 }
@@ -65,6 +65,14 @@ a {
   align-items: center;
 }
 
+.submenu {
+  width: 200px;
+  padding: 0 5px;
+  position: absolute;
+  top: 39px;
+  display: none;
+}
+
 .submenu-item {
   position: relative;
   border-bottom: 1px solid #e7e7e7;
@@ -84,14 +92,6 @@ a {
 
 .submenu-item-link:hover {
   color: #2aacc8;
-}
-
-.submenu {
-  width: 200px;
-  padding: 0 5px;
-  position: absolute;
-  top: 39px;
-  display: none;
 }
 
 .menu-item {
@@ -128,6 +128,7 @@ a {
   width: 1000px;
   height: 440px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .slick-prev:before,
@@ -137,14 +138,15 @@ a {
 
 .slick-dots {
   position: absolute;
-  bottom: -40px;
+  bottom: 27px;
   font-size: 35px;
   line-height: 1.2;
 }
 
 .slick-dots li button:before {
-  font-size: 35px;
+  font-size: 40px;
   line-height: 1.2;
+  opacity: .55;
   color: #363636;
 }
 
@@ -166,8 +168,7 @@ a {
 .heading {
   color: #fff;
   font-size: 50px;
-  padding-top: 92px;
-  padding-left: 62px;
+  padding: 92px 0 0 62px;
 }
 
 .main-list-container {
@@ -180,8 +181,8 @@ a {
 .icon-cstm {
   color: #fff;
   padding: 10px;
-  margin-right: 10px;
-  font-size: 25px;
+  margin-right: 20px;
+  font-size: 20px;
   border-radius: 50%;
   background-color: #2aacc8;
 }

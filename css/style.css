@@ -26,7 +26,7 @@ a {
 }
 
 .banner-container {
-  min-height: 500px;
+  min-height: 520px;
   padding-top: 30px;
   background-color: #81e4ed;
 }
@@ -60,16 +60,11 @@ a {
   margin-left: 6px;
 }
 
-.drop-list {
-  display: flex;
-  align-items: center;
-}
-
 .submenu {
   width: 200px;
   padding: 0 5px;
   position: absolute;
-  top: 39px;
+  top: 32px;
   display: none;
 }
 
@@ -106,25 +101,26 @@ a {
 }
 
 .menu-item-link {
-  padding: 10px;
+  padding: 10px 10px 7px;
   color: #000;
   text-transform: uppercase;
   font-size: 13px;
   line-height: 1.5;
   font-weight: 700;
+  display: block;
 }
 
-.menu-item-link:hover {
+.menu-item:hover {
   background-color: #fff;
   border-top: 5px solid #2aacc8;
-  padding: 5px 10px 10px;
+  padding-bottom: 5px;
 }
 
 .menu-item:hover .menu-item-link {
   color: #2aacc8;
 }
 
-.slider {
+.slick-list {
   width: 1000px;
   height: 440px;
   margin: 0 auto;
@@ -136,18 +132,14 @@ a {
   display: none;
 }
 
-.slick-dots {
-  position: absolute;
-  bottom: 27px;
-  font-size: 35px;
-  line-height: 1.2;
-}
-
 .slick-dots li button:before {
-  font-size: 40px;
-  line-height: 1.2;
-  opacity: .55;
+  font-size: 35px;
+  line-height: 1;
+  opacity: 0.55;
   color: #363636;
+  position: absolute;
+  top: 5px;
+  left: 0;
 }
 
 .banner-top {
@@ -206,6 +198,8 @@ a {
 }
 
 .main-list-heading {
+  display: flex;
+  align-items: center;
   text-transform: uppercase;
   font-size: 15px;
   line-height: 1.5;
